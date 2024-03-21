@@ -9,8 +9,9 @@ seating_chart =[
 
 #print Where seet each student
 
-for i, row in enumerate(seating_chart):
-    for j, student_name in enumerate(row):
-        print(f"{student_name} , is in raw {i+1}, seat {j+1}")
-
+for name, arrays in enumerate(seating_chart):
+    print("The value of outer for loop", arrays)
+    for element, student_name in enumerate(arrays):
+       
+        print(f" nested loop ,{student_name} , is in row {element+1}, seat {element+1}")
 
