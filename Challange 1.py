@@ -1,15 +1,38 @@
-# created a function that find the second smallest Item in the List
+#Find the second smallest number in an array
 
-my_list = [5, 8 ,3 ,2,6, 7]
 
-def searchSecondItem(listy):
-    if len(listy) < 1:
-       return print("no item in the list")
-    if len(listy) > 2:
-       
-       listySorted = sorted(listy)
+my_list = [2, 10 , 7, 1, 4]
 
-       return  print(listySorted[1])
-    
+#print(sorted(my_list))
+# the big Notation in this function is n log n because use sorted function
+def find_the_second_smallest(lst):
+    if list == []:
+        return print("list empty")
+    elif len(lst) > 1 :
+        sorted_list = sorted(lst)
+        return print("the second smallest is: " , sorted_list[1] )
 
-searchSecondItem(my_list)
+#find_the_second_smallest(my_list)
+
+# A better solotution with O(n) will be:
+
+def Find_Second_v2(lst):
+    if len(lst) < 2:
+        return None
+    smalles = float('inf')
+    secondSmallest = float('inf')
+    for num in lst:
+        if num < smalles:
+            secondSmallest = smalles
+            smalles = num
+            
+        elif num < secondSmallest:
+            secondSmallest = num
+    return secondSmallest
+
+print(Find_Second_v2(my_list))
+
+
+
+
+ 
