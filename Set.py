@@ -8,7 +8,7 @@ primary_colors.add("blue")
 
 #we can write a set with {} eather
 
-numbers_a = {10 ,20, 30, 40,40}
+numbers_a = {10 ,20, 30, 40,}
 numbers_b = {30, 40, 50, 60}
 print("number a list: ", numbers_a)
 print("number b list: ", numbers_b)
@@ -45,3 +45,22 @@ print("symmetric_difference: ", symetric_numbers)
 frozen_primary_colors = frozenset(["red, 'yellow", "blue"])
 
 # This function CAN NOT BE DONE!!!! :    frozen_primary_colors.add("orange")
+
+
+
+#
+def find_number(numero, listy):
+    for number in listy:
+        if number == numero:
+            return True
+    return False  # Return False after the loop if number is not found
+
+def finf_number(numero,listy):
+
+    for number in listy:
+        if number == numero:
+           print("True")
+        else:
+            print("false")
+
+print(find_number(100,numbers_a))
