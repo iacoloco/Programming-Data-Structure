@@ -15,8 +15,8 @@ def encodeString(stringVal):
         if prevChar != char:
             encodedList.append((prevChar, count))
             count = 0
-    prevChar = char
-    count = count + 1
+        prevChar = char
+        count = count + 1
     
     encodedList.append((prevChar, count))
     return encodedList

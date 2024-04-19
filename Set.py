@@ -55,12 +55,6 @@ def find_number(numero, listy):
             return True
     return False  # Return False after the loop if number is not found
 
-def finf_number(numero,listy):
 
-    for number in listy:
-        if number == numero:
-           print("True")
-        else:
-            print("false")
 
 print(find_number(100,numbers_a))
